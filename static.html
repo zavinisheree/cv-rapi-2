@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rafi Nadhir Muzhaffar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .mesh-gradient {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #60a5fa, #a78bfa, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-ring {
+            position: relative;
+            padding: 8px;
+            background: linear-gradient(45deg, #3b82f6, #ec4899);
+            border-radius: 9999px;
+        }
+
+        .profile-img {
+            object-fit: cover;
+            object-position: center 20%; /* Menyesuaikan agar wajah tetap di tengah */
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating { animation: float 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="mesh-gradient min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass px-6 py-3 rounded-2xl">
+            <span class="text-2xl font-extrabold text-gradient">RNM.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-400 transition text-slate-300">Beranda</a>
+                <a href="#about" class="hover:text-blue-400 transition text-slate-300">Profil</a>
+                <a href="#education" class="hover:text-blue-400 transition text-slate-300">Edukasi</a>
+                <a href="#achievements" class="hover:text-blue-400 transition text-slate-300">Prestasi</a>
+            </div>
+            <a href="tel:081220841095" class="bg-white text-black px-4 py-2 rounded-xl text-sm font-bold hover:bg-blue-400 transition">
+                Kontak ⚡
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+            <div class="floating mb-8">
+                <div class="profile-ring">
+                    <div class="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-slate-900 shadow-2xl">
+                        <!-- Menggunakan foto terbaru yang diunggah -->
+                        <img src="d5f4d850-f670-4a8a-b7e0-ffbfdf2cdf1d.jpg" alt="Rafi Nadhir Muzhaffar" class="w-full h-full profile-img">
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Rafi Nadhir <span class="text-gradient">Muzhaffar</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-10">
+                🚀 Pelajar aktif dengan antusiasme tinggi di bidang <span class="text-white font-semibold italic">Otomotif</span> & <span class="text-white font-semibold italic">Olahraga</span>. 
+                Berjiwa kompetitif, disiplin, dan senang bekerja dalam tim.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://instagram.com/rafii.nadhir" target="_blank" class="flex items-center gap-2 glass px-8 py-4 rounded-2xl font-bold hover:scale-105 transition">
+                    <i class="fab fa-instagram text-pink-500 text-xl"></i> @rafii.nadhir
+                </a>
+                <a href="#about" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-2xl font-bold shadow-[0_0_20px_rgba(37,99,235,0.4)] transition">
+                    Eksplorasi Profil 👇
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Section: Info -->
+    <section id="about" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Info Utama -->
+                <div class="md:col-span-2 glass p-8 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <span>📋</span> Data Pribadi
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Lahir</p>
+                            <p class="text-lg font-semibold">Bandung, 26 Jan 2008 🎂</p>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Hobi Utama</p>
+                            <p class="text-lg font-semibold">Balap Motor 🏍️</p>
+                        </div>
+                        <div class="md:col-span-2 space-y-1">
+                            <p class="text-slate-500 text-xs uppercase tracking-widest font-bold">Domisili</p>
+                            <p class="text-lg font-semibold">Ciparay, Kab. Bandung 📍</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill & Language -->
+                <div class="glass p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">Keahlian & Bahasa</h3>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-lg text-xs font-bold border border-blue-500/20">🇮🇩 Indonesia</span>
+                            <span class="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-lg text-xs font-bold border border-purple-500/20">🇺🇸 English</span>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-slate-400">Teamwork 🤝</span>
+                            <span class="font-bold">95%</span>
+                        </div>
+                        <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-purple-500 h-full w-[95%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 relative">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Jejak Akademik 🎓</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- SMA -->
+                <div class="group relative pl-8 border-l-2 border-slate-700 hover:border-blue-500 transition">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-blue-500 transition"></div>
+                    <span class="text-blue-400 font-bold text-sm">2023 — Sekarang</span>
+                    <h3 class="text-2xl font-bold mt-1">SMA (Sekolah Menengah Atas) 🏫</h3>
+                    <p class="text-slate-400 mt-2">Fokus pada pengembangan diri dan persiapan karir masa depan.</p>
+                </div>
+
+                <!-- SMP -->
+                <div class="group relative pl-8 border-l-2 border-slate-700 hover:border-purple-500 transition">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-purple-500 transition"></div>
+                    <span class="text-purple-400 font-bold text-sm">2020 — 2023</span>
+                    <h3 class="text-2xl font-bold mt-1">SMP (Sekolah Menengah Pertama) 📚</h3>
+                    <p class="text-slate-400 mt-2">Masa aktif dalam pengembangan bakat non-akademik terutama olahraga.</p>
+                </div>
+
+                <!-- SD -->
+                <div class="group relative pl-8 border-l-2 border-slate-700 hover:border-pink-500 transition">
+                    <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-pink-500 transition"></div>
+                    <span class="text-pink-400 font-bold text-sm">2014 — 2020</span>
+                    <h3 class="text-2xl font-bold mt-1">Sekolah Dasar (SD) 🌱</h3>
+                    <p class="text-slate-400 mt-2">Langkah awal eksplorasi minat dan bakat kreatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-16">Pencapaian & Milestone 🏆</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass p-8 rounded-[2rem] border-b-4 border-yellow-500">
+                    <div class="text-4xl mb-6">🏃‍♂️</div>
+                    <h4 class="text-xl font-bold mb-3">8 Besar Fun Run</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Menunjukkan daya tahan fisik dan semangat pantang menyerah dalam kompetisi atletik.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass p-8 rounded-[2rem] border-b-4 border-blue-500">
+                    <div class="text-4xl mb-6">⚽</div>
+                    <h4 class="text-xl font-bold mb-3">Juara 2 Futsal</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Berkontribusi signifikan dalam tim untuk meraih posisi runner-up di tingkat sekolah.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass p-8 rounded-[2rem] border-b-4 border-pink-500">
+                    <div class="text-4xl mb-6">🎨</div>
+                    <h4 class="text-xl font-bold mb-3">Lomba Mewarnai</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pencapaian masa kecil yang melatih ketelitian dan imajinasi kreatif.</p>
+                </div>
+            </div>
+
+            <!-- Specialized Card -->
+            <div class="mt-12 glass p-1 rounded-3xl bg-gradient-to-r from-blue-600/20 to-purple-600/20">
+                <div class="glass p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-blue-600/20 p-6 rounded-2xl">
+                        <i class="fas fa-certificate text-4xl text-blue-400"></i>
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <span class="bg-blue-600 text-[10px] font-black uppercase tracking-tighter px-2 py-1 rounded mb-2 inline-block">Official Verification</span>
+                        <h3 class="text-2xl font-bold italic">"Sertifikat PORAK Futsal"</h3>
+                        <p class="text-slate-400 mt-1">Penghargaan atas dedikasi dan sportifitas dalam turnamen futsal antar kelas.</p>
+                    </div>
+                    <button class="bg-white text-black px-6 py-3 rounded-xl font-bold text-sm whitespace-nowrap hover:bg-blue-400 transition">
+                        Lihat Dokumen 🔍
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5 bg-black/20">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 italic">Mari Terhubung! 👋</h2>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://instagram.com/rafii.nadhir" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-pink-500 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="tel:081220841095" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:text-green-500 transition">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+            </div>
+            <p class="text-slate-500 text-sm font-medium">
+                &copy; 2024 Rafi Nadhir Muzhaffar. <br class="md:hidden"> Didesain dengan ✨ dan Gairah Otomotif.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
